@@ -38,7 +38,7 @@ The fee is paid in QRL, so its value in another currency moves with the market e
 
 Keeping the two ideas apart helps when you are deciding whether a payment is worth making. The question "what does this cost me" is the fee multiplied by the price at that moment; the question "is the network expensive right now" is just the fee.
 
-https://github.com/qrl-wallet/token-facts-and-prices/blob/main/qrl-price-and-market-cap.md covers how the price is reported, and it is the page to read if the fiat value of a fee is the thing you are trying to work out.
+[QRL Price and Market Cap Data](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/qrl-price-and-market-cap.md) covers how the price is reported, and it is the page to read if the fiat value of a fee is the thing you are trying to work out.
 
 ## Failed transactions
 
@@ -46,7 +46,7 @@ A transaction that is never included in a block does not take the fee, because t
 
 What does not come back is the signature. Signing a transaction reveals a one-time key, and that key cannot be used again safely whether or not the transaction confirms. Treat a signed transaction as final in that sense even while its confirmation is in doubt.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-pending-transaction-stuck.md covers what to do while a payment is waiting, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/send-qrl-to-another-address.md covers the confirmation screen itself. https://github.com/qrl-wallet/token-facts-and-prices/blob/main/what-network-does-qrl-use.md explains the network the fee is paid to, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/receive-qrl-in-your-wallet.md covers the free half of the flow: nothing is charged to receive.
+[QRL Pending Transaction Stuck](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-pending-transaction-stuck.md) covers what to do while a payment is waiting, and [Send QRL to Another Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/send-qrl-to-another-address.md) covers the confirmation screen itself. [What Network Does QRL Use?](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/what-network-does-qrl-use.md) explains the network the fee is paid to, and [Receive QRL in Your Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/receive-qrl-in-your-wallet.md) covers the free half of the flow: nothing is charged to receive.
 
 ## FAQ
 

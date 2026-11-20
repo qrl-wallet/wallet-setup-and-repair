@@ -36,17 +36,17 @@ Keys come back. Addresses come back. Balances reappear after sync, and transacti
 
 What does not come back is anything the wallet never stored: a label you gave an address, a note you kept beside the file, the password itself. Settings are rebuilt by using the application again.
 
-The one state that must not move backwards is the one-time key index. QRL addresses sign with keys drawn in order, and a restore that rewinds the count can hand out a key that has already signed. The wallet keeps that count in its own data, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md explains why an old wallet file is a risk rather than a convenience. If you restore an old file, treat it as a wallet to empty into a fresh address, not one to keep signing with.
+The one state that must not move backwards is the one-time key index. QRL addresses sign with keys drawn in order, and a restore that rewinds the count can hand out a key that has already signed. The wallet keeps that count in its own data, and [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) explains why an old wallet file is a risk rather than a convenience. If you restore an old file, treat it as a wallet to empty into a fresh address, not one to keep signing with.
 
 ## If you have neither
 
 Then there is no procedure, no tool and no service that will bring the wallet back. The keys exist only in the two things you were meant to keep, and without them the addresses are still on the chain but nothing can sign for them.
 
-This is the point where people are contacted by someone offering to recover a wallet for a fee. That offer cannot be true: an organisation with no copy of your seed has nothing to work from. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/recover-a-lost-qrl-wallet.md sets out what is and is not possible, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md covers the habits that keep you out of this position.
+This is the point where people are contacted by someone offering to recover a wallet for a fee. That offer cannot be true: an organisation with no copy of your seed has nothing to work from. [Recover a Lost QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/recover-a-lost-qrl-wallet.md) sets out what is and is not possible, and [Is the QRL Wallet Safe to Use?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md) covers the habits that keep you out of this position.
 
 If the loss is partial, meaning you have one of the two backups, the answer is usually the good news story. A phrase without the file restores on any machine. A file without the phrase restores only with its password. Neither case needs a third party.
 
-Before you restore anything, read https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/back-up-a-qrl-seed-phrase.md and check that what you are about to trust as a backup is stored the way that page describes. A restore is also the moment to confirm the copy works, so doing it once on purpose is better than discovering the problem later. Once the wallet is running again, https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md covers the first address if you decide to start clean.
+Before you restore anything, read [Back Up a QRL Seed Phrase](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/back-up-a-qrl-seed-phrase.md) and check that what you are about to trust as a backup is stored the way that page describes. A restore is also the moment to confirm the copy works, so doing it once on purpose is better than discovering the problem later. Once the wallet is running again, [Create Your First QRL Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md) covers the first address if you decide to start clean.
 
 ## FAQ
 

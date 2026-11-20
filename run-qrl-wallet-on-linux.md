@@ -10,7 +10,7 @@ The release publishes one Linux asset, and it is an archive rather than a packag
 
 That is worth knowing before you start, because the file you download is not the thing you install. Hashing the archive proves the download arrived intact; installing a package out of it is a second step, and the two are easy to confuse if you have only used distributions that ship a single package per download.
 
-Take the archive from the project's GitHub releases page rather than from a mirror or a search advertisement. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md covers which release is current and why the releases page is the only place where the file and its hash come from the same source.
+Take the archive from the project's GitHub releases page rather than from a mirror or a search advertisement. [Download the Official QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md) covers which release is current and why the releases page is the only place where the file and its hash come from the same source.
 
 ## Choosing the package
 
@@ -26,7 +26,7 @@ Install with your package manager so that dependencies are resolved, rather than
 
 A graphical package manager does the same job if you prefer one. What matters is that the package is installed rather than extracted somewhere and run from there.
 
-Verify first. Compute the hash of the archive and compare it with the value published for it before you install anything; https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/verify-the-qrl-installer.md gives the command and explains what a mismatch means. Installing an unverified package with administrator rights is the one mistake in this flow that reaches beyond your user account.
+Verify first. Compute the hash of the archive and compare it with the value published for it before you install anything; [Verify the QRL Installer](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/verify-the-qrl-installer.md) gives the command and explains what a mismatch means. Installing an unverified package with administrator rights is the one mistake in this flow that reaches beyond your user account.
 
 Do not work around a dependency error by forcing the install. A package that will not resolve its dependencies is telling you something about the system it is being installed on, and the wallet needs those libraries to start.
 
@@ -48,7 +48,7 @@ On Linux the wallet file sits in a hidden directory in your home folder. That ha
 
 Decide which of those you want before the address holds anything. A backup that reaches your own storage is useful; one that reaches a service you would not trust with the file is a copy you no longer control.
 
-If the wallet starts but never syncs, the fault is in the network path rather than the install. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/fix-qrl-wallet-connection-error.md covers node settings, ports, proxies and VPNs, and it applies to Linux exactly as it does elsewhere.
+If the wallet starts but never syncs, the fault is in the network path rather than the install. [Fix QRL Wallet Connection Error](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/fix-qrl-wallet-connection-error.md) covers node settings, ports, proxies and VPNs, and it applies to Linux exactly as it does elsewhere.
 
 ## No AppImage in this release
 
@@ -60,7 +60,7 @@ If you find a single-file build elsewhere, treat it as unverified by definition:
 
 ## Building from source instead
 
-The wallet is MIT-licensed and the source is public, so building it is a legitimate route on a distribution that uses neither package format. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-wallet-source-code-licence.md covers what the licence permits and what a source build does not change: your keys, the network and the release process stay the same.
+The wallet is MIT-licensed and the source is public, so building it is a legitimate route on a distribution that uses neither package format. [QRL Wallet Source Code and Licence](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-wallet-source-code-licence.md) covers what the licence permits and what a source build does not change: your keys, the network and the release process stay the same.
 
 A build you compile is your build. The project does not review every fork, and a build that has been altered is a different program from the one the release describes.
 
@@ -70,7 +70,7 @@ For most readers the package is the shorter path. Build from source when you hav
 
 Update by installing the newer package over the old one, keeping the wallet file where it is. Keep that file inside your backup, and keep the mnemonic out of anything that reaches the internet.
 
-If you are still choosing a platform, https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md lists the assets for all three systems, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/install-qrl-wallet-on-macos.md covers the macOS path if you also work on a Mac.
+If you are still choosing a platform, [Download the Official QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md) lists the assets for all three systems, and [Install QRL Wallet on macOS](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/install-qrl-wallet-on-macos.md) covers the macOS path if you also work on a Mac.
 
 ## FAQ
 

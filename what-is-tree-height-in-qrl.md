@@ -38,7 +38,7 @@ That is why the move has to happen before the last key is used. Create a fresh a
 
 Do not hand out an address that is close to its limit as a destination for new funds, and do not wait for a warning before acting on the count. The wallet shows the number falling, and the decision belongs to you while a key is still available.
 
-The wallet tracks the index as you go, which is why it can warn you before the end rather than after it. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md covers reading that number, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/move-qrl-before-keys-run-out.md covers the move itself.
+The wallet tracks the index as you go, which is why it can warn you before the end rather than after it. [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) covers reading that number, and [Move QRL Before Keys Run Out](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/move-qrl-before-keys-run-out.md) covers the move itself.
 
 ## Why "just use a huge tree" is not free
 
@@ -50,7 +50,7 @@ And it does not change the nature of the limit. A tree of any height ends, and a
 
 What a taller tree would change is the consequence of losing track of the index. A wallet that has fallen behind on a large tree has more state to reconstruct, which makes a sloppy backup more expensive rather than less.
 
-None of this makes the default a safety feature, and a larger height is not an upgrade to security. The security comes from the hash-based signatures; the height only decides how many of them exist. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-qrl-uses-a-merkle-tree.md explains the structure, https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-stateful-signatures-matter-in-qrl.md explains why the order matters, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md covers the signing itself.
+None of this makes the default a safety feature, and a larger height is not an upgrade to security. The security comes from the hash-based signatures; the height only decides how many of them exist. [Why QRL Uses a Merkle Tree](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-qrl-uses-a-merkle-tree.md) explains the structure, [Why Stateful Signatures Matter in QRL](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-stateful-signatures-matter-in-qrl.md) explains why the order matters, and [How XMSS Signatures Work](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/how-qrl-xmss-signatures-work.md) covers the signing itself.
 
 ## FAQ
 

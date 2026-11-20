@@ -46,11 +46,11 @@ If it never appears after the wallet is fully synced, check the address you gave
 
 An address can receive as often as you like. Receiving does not consume the one-time keys; only signing does, so an address that has received a hundred payments still has all 1,024 of its signatures available.
 
-What changes the count is a spend. The moment you send from that address, one key is used and cannot be used again, which is why https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md matters more for sending than for receiving.
+What changes the count is a spend. The moment you send from that address, one key is used and cannot be used again, which is why [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) matters more for sending than for receiving.
 
 People sometimes describe an address as used up after a payment arrives. That is not how it works here: reuse for receiving is normal and safe, and the limit belongs to signing. Where reuse does become a question is when you send repeatedly from the same address over a long period, and that is the case to plan for.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md covers making the address in the first place, https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/send-qrl-to-another-address.md covers the sending side, and https://github.com/qrl-wallet/token-facts-and-prices/blob/main/what-network-does-qrl-use.md explains the network the payment travels over. https://github.com/qrl-wallet/token-facts-and-prices/blob/main/qrl-rich-list-explained.md is worth a read if you are curious what a large balance looks like on-chain, since addresses are visible even when their owners are not.
+[Create Your First QRL Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md) covers making the address in the first place, [Send QRL to Another Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/send-qrl-to-another-address.md) covers the sending side, and [What Network Does QRL Use?](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/what-network-does-qrl-use.md) explains the network the payment travels over. [QRL Rich List Explained](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/qrl-rich-list-explained.md) is worth a read if you are curious what a large balance looks like on-chain, since addresses are visible even when their owners are not.
 
 ## FAQ
 

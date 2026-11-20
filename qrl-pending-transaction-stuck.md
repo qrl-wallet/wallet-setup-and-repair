@@ -28,9 +28,9 @@ If the explorer shows the transaction in a block, the payment is finished and th
 
 ## Node and sync causes
 
-A wallet that is behind does not know the current state, and a transaction built on old state can be rejected or can sit unused. Syncing fully is the first thing to check, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-wallet-not-syncing-fix.md covers a wallet that will not catch up.
+A wallet that is behind does not know the current state, and a transaction built on old state can be rejected or can sit unused. Syncing fully is the first thing to check, and [QRL Wallet Not Syncing Fix](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-wallet-not-syncing-fix.md) covers a wallet that will not catch up.
 
-A node that is unreachable produces the other version of the same story: the wallet holds a signed transaction it could not broadcast. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/fix-qrl-wallet-connection-error.md covers that case, including the node setting and the firewall.
+A node that is unreachable produces the other version of the same story: the wallet holds a signed transaction it could not broadcast. [Fix QRL Wallet Connection Error](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/fix-qrl-wallet-connection-error.md) covers that case, including the node setting and the firewall.
 
 A fee below what the network will accept leaves the transaction waiting indefinitely, since nodes are free to ignore anything under their floor. The confirmation screen is where the fee was shown, and it is worth comparing with what you approved.
 
@@ -52,7 +52,7 @@ QRL keys sign once. A second signature with the same key is rejected by the netw
 
 The practical rule is to wait for a definite answer before touching the address again. Either the transaction confirms and the key is legitimately spent, or it never reaches a block and the key is spent anyway, because the signature was already made.
 
-If you must move funds urgently, do it from a different address in the same wallet, which has its own keys and its own index. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/send-qrl-to-another-address.md covers sending, https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md explains why the index matters here, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/understanding-qrl-transaction-fees.md covers the fee the network will accept.
+If you must move funds urgently, do it from a different address in the same wallet, which has its own keys and its own index. [Send QRL to Another Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/send-qrl-to-another-address.md) covers sending, [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) explains why the index matters here, and [Understanding QRL Transaction Fees](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/understanding-qrl-transaction-fees.md) covers the fee the network will accept.
 
 The explorer settles the question either way. Once the original transaction appears in a block, the address is in a known state and you can plan the next step from facts rather than from an empty screen in the wallet.
 

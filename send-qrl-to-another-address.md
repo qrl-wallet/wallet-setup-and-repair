@@ -28,7 +28,7 @@ The fee appears before you confirm, separate from the amount. It is a network ch
 
 Check the total, which is the amount plus the fee, against what you meant to spend. The screen is the place to notice that a payment is larger than intended, and it is the last place where noticing changes anything.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/understanding-qrl-transaction-fees.md explains what the fee pays for, and why a large transfer and a small one cost the same in fees.
+[Understanding QRL Transaction Fees](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/understanding-qrl-transaction-fees.md) explains what the fee pays for, and why a large transfer and a small one cost the same in fees.
 
 ## Confirming
 
@@ -42,7 +42,7 @@ Once included, there is no undo. Nobody can reverse a QRL transaction, no suppor
 
 Each address can sign 1,024 times, because QRL addresses are built from a Merkle tree of one-time keys. Every spend uses one of them, in order, and the count moves forward when you sign rather than when the transaction confirms.
 
-That has two consequences worth holding on to. The first is that a signed transaction consumes a key even if it never confirms, which is why reusing an address after a failed attempt needs care. The second is that the count is finite: https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md covers what to do as it runs down.
+That has two consequences worth holding on to. The first is that a signed transaction consumes a key even if it never confirms, which is why reusing an address after a failed attempt needs care. The second is that the count is finite: [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) covers what to do as it runs down.
 
 Running two copies of the same wallet is the failure this model punishes. Two copies can draw the same key for two different transactions, and a key that has signed twice is rejected, so one of the two spends fails. Move between machines by restoring, and stop using the old copy.
 
@@ -52,7 +52,7 @@ The send form takes one recipient, one amount and a fee. There is no memo field,
 
 Paying several people therefore means several sends, each with its own fee and its own one-time key. Nothing in the form groups them into one action.
 
-The limit that does accumulate is the signature count. Each address can sign 1,024 times, so an address that has sent a thousand payments is near the end of its life even though its balance may be unchanged. That is a limit on how often you can spend from an address rather than on how much you can hold. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md covers creating the destination if you are moving funds between your own addresses, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-pending-transaction-stuck.md covers a payment that has not confirmed. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/receive-qrl-in-your-wallet.md is the other side of the same flow.
+The limit that does accumulate is the signature count. Each address can sign 1,024 times, so an address that has sent a thousand payments is near the end of its life even though its balance may be unchanged. That is a limit on how often you can spend from an address rather than on how much you can hold. [Create Your First QRL Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md) covers creating the destination if you are moving funds between your own addresses, and [QRL Pending Transaction Stuck](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-pending-transaction-stuck.md) covers a payment that has not confirmed. [Receive QRL in Your Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/receive-qrl-in-your-wallet.md) is the other side of the same flow.
 
 ## FAQ
 
