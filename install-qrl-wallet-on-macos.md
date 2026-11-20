@@ -8,7 +8,7 @@
 
 The release carries a single macOS asset rather than a separate file for each processor, so there is no build to choose between and no architecture to match. That removes the mistake most people expect to make: there is nothing to get wrong at download time.
 
-What remains is the file itself. Take the disk image from the project's GitHub releases page, as https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md describes, and check its hash before you open it. The download is large, so a truncated copy is a real possibility on a slow connection, and a truncated disk image mounts badly or refuses to mount at all.
+What remains is the file itself. Take the disk image from the project's GitHub releases page, as [Download the Official QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md) describes, and check its hash before you open it. The download is large, so a truncated copy is a real possibility on a slow connection, and a truncated disk image mounts badly or refuses to mount at all.
 
 If a page offers you a macOS build from anywhere other than the release page, treat it as a different file. There is no published digest for it, which means there is nothing to compare.
 
@@ -26,7 +26,7 @@ That separation is the thing to remember at backup time. Copying the application
 
 macOS will refuse to launch an application it cannot identify the developer of, and the dialog offers to move it to the bin. That refusal is a policy check, not a scan result, and it appears for any build that is not notarised under an identified developer account.
 
-Verify first. Compare the hash of the downloaded asset with the value the project publishes for that asset; https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/verify-the-qrl-installer.md gives the command. Once the hash matches, you know the file is the one the project published, and the remaining step is to allow it.
+Verify first. Compare the hash of the downloaded asset with the value the project publishes for that asset; [Verify the QRL Installer](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/verify-the-qrl-installer.md) gives the command. Once the hash matches, you know the file is the one the project published, and the remaining step is to allow it.
 
 Use the Open command from the context menu, or the Privacy and Security panel's allow button, rather than disabling Gatekeeper system-wide. The single-application override is reversible and keeps the protection in place for everything else.
 
@@ -36,7 +36,7 @@ What you should not do is remove quarantine attributes from a file you have not 
 
 On first launch the wallet connects to QRL nodes and catches up with the chain. That is a real download and it takes time, especially on a fresh machine with no cached data.
 
-Progress is visible in the window. If it stalls at zero, the wallet is not reaching a node, and the connection checks in https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-wallet-not-syncing-fix.md apply exactly as they do on other platforms.
+Progress is visible in the window. If it stalls at zero, the wallet is not reaching a node, and the connection checks described in [QRL Wallet Not Syncing Fix](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-wallet-not-syncing-fix.md) apply exactly as they do on other platforms.
 
 When sync completes, create an address. No account is needed, no email address is requested, and nothing is registered anywhere. The wallet asks for a password, writes a wallet file, and shows an address beginning with Q.
 
@@ -54,9 +54,9 @@ If you migrated from an older Mac and the wallet opens with an empty address lis
 
 Keep the application in Applications and update by replacing the bundle when a new release appears. Keep the wallet file in a location your backup covers, and keep the mnemonic out of any backup that reaches the internet.
 
-If you have not decided between the desktop client and a browser wallet, https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-desktop-vs-web-wallet.md compares where keys live in each. If the next question is where to start, https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md walks through the first address and its backup.
+If you have not decided between the desktop client and a browser wallet, [QRL Desktop Wallet vs Web Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-desktop-vs-web-wallet.md) compares where keys live in each. If the next question is where to start, [Create Your First QRL Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md) walks through the first address and its backup.
 
-Linux users follow the same logic with a different container, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/run-qrl-wallet-on-linux.md covers that path.
+Linux users follow the same logic with a different container, and [Run QRL Wallet on Linux](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/run-qrl-wallet-on-linux.md) covers that path.
 
 ## FAQ
 

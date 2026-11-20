@@ -8,7 +8,7 @@
 
 There is one Windows file on the release page, and it is an installer. You do not choose between processor architectures or between an installer and a portable build: the release publishes a single Windows asset, and that is the one.
 
-Take it from the project's GitHub releases page, as https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md describes. If a search result offers a "Windows installer" from somewhere else, it is not the release, and there is no published digest to check it against.
+Take it from the project's GitHub releases page; [Download the Official QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md) describes which asset to take. If a search result offers a "Windows installer" from somewhere else, it is not the release, and there is no published digest to check it against.
 
 Once the file is on disk, note where it landed. A downloads folder is fine as a staging area, though the installed application will not live there.
 
@@ -28,7 +28,7 @@ Windows may show a SmartScreen prompt for a file it has not seen downloaded ofte
 
 The order of operations matters here. Check the hash first, against the value the project publishes for that asset. If it matches, the file is the one the project built, and you can proceed through the prompt using the option Windows offers to keep the file.
 
-If the hash does not match, stop. Do not click through the warning to see what happens; delete the file and download it again. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/verify-the-qrl-installer.md lists the command and the comparison step.
+If the hash does not match, stop. Do not click through the warning to see what happens; delete the file and download it again. [Verify the QRL Installer](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/verify-the-qrl-installer.md) lists the command and the comparison step.
 
 What you should not do is turn off SmartScreen, add a blanket exclusion, or run the wallet as administrator. None of those steps is needed to install it, and all three widen the damage if something else on the machine is wrong.
 
@@ -48,13 +48,13 @@ The common causes are mundane. The download was truncated, so the installer refu
 
 Work through them in that order, and confirm the hash before you blame the build. If the hash matches and the installer ran to completion, the next check is whether the application opens at all, which separates a broken install from a wallet that simply is not connecting.
 
-If the wallet starts but stays disconnected, the problem is the network path rather than the installation. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-wallet-not-syncing-fix.md covers the version, node, firewall and clock checks in the order that finds the cause fastest.
+If the wallet starts but stays disconnected, the problem is the network path rather than the installation. [QRL Wallet Not Syncing Fix](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-wallet-not-syncing-fix.md) covers the version, node, firewall and clock checks in the order that finds the cause fastest.
 
 ## After the install
 
 Three habits make the Windows build behave. Leave the application where the installer put it. Keep the wallet file somewhere you back up, and keep the mnemonic out of every backup that touches the internet. Update by running the newer installer rather than by copying files between versions.
 
-If you want to compare this route with the alternatives before committing, https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-desktop-vs-web-wallet.md sets out where keys live in each. If you already know you want the desktop client, https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md is the next step.
+If you want to compare this route with the alternatives before committing, [QRL Desktop Wallet vs Web Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-desktop-vs-web-wallet.md) sets out where keys live in each. If you already know you want the desktop client, [Create Your First QRL Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md) is the next step.
 
 ## FAQ
 
@@ -72,6 +72,6 @@ In a location the wallet shows you on first run, separate from the application f
 
 ### Can I install it without administrator rights?
 
-The installer may ask to write to a program location, which some machines restrict. If you cannot install there, the source build in https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-wallet-source-code-licence.md is the documented alternative.
+The installer may ask to write to a program location, which some machines restrict. If you cannot install there, the source build in [QRL Wallet Source Code and Licence](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-wallet-source-code-licence.md) is the documented alternative.
 
 <!-- answers: none -->

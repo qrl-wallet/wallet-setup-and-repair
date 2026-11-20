@@ -40,17 +40,17 @@ Do not put it in a password manager as the primary copy. A manager is a good pla
 
 Do not dictate it over a phone call or send it to anyone who says they are helping. No support channel asks for it, no moderator needs it to check a balance, and no giveaway requires it to send you anything. Anyone with the words can spend the balance, so a request for them is either an attack or a mistake.
 
-https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md covers the rest of the habits that surround the phrase, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/recover-a-lost-qrl-wallet.md explains why a phrase kept badly is the same as no phrase at all.
+[Is the QRL Wallet Safe to Use?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md) covers the rest of the habits that surround the phrase, and [Recover a Lost QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/recover-a-lost-qrl-wallet.md) explains why a phrase kept badly is the same as no phrase at all.
 
 ## Testing the backup
 
 Test the backup before the wallet holds anything worth losing. Restore from the phrase on a second machine, or in a second profile on the same one, and confirm the same address appears. Then delete that test wallet.
 
-Doing this while the balance is small turns a theory into a checked fact. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/restore-qrl-wallet-from-mnemonic.md walks through the restore, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md covers the address step if you are starting from nothing.
+Doing this while the balance is small turns a theory into a checked fact. [Restore QRL Wallet From a Mnemonic](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/restore-qrl-wallet-from-mnemonic.md) walks through the restore, and [Create Your First QRL Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md) covers the address step if you are starting from nothing.
 
 Repeat the test after any change: a new machine, a new copy, a word you rewrote because the ink ran. A backup you have never restored is a hope, and hope is a poor substitute for a verified copy.
 
-Once the phrase is written, stored twice and tested, the wallet file and its password complete the set. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md is the next thing to understand, because a backup restores keys rather than extending the number of signatures an address can make.
+Once the phrase is written, stored twice and tested, the wallet file and its password complete the set. [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) is the next thing to understand, because a backup restores keys rather than extending the number of signatures an address can make.
 
 ## FAQ
 

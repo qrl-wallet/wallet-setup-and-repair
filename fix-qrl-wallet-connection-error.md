@@ -22,7 +22,7 @@ Test the setting before you test anything else. If you added a custom node recen
 
 If the default fails too, the problem is on your side of the connection rather than the node's. That one test splits the remaining work in half, and it costs a few seconds.
 
-https://github.com/qrl-wallet/token-facts-and-prices/blob/main/what-network-does-qrl-use.md explains what a node is doing in the QRL network, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/run-qrl-wallet-on-linux.md covers running one of your own.
+[What Network Does QRL Use?](https://github.com/qrl-wallet/token-facts-and-prices/blob/main/what-network-does-qrl-use.md) explains what a node is doing in the QRL network, and [Run QRL Wallet on Linux](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/run-qrl-wallet-on-linux.md) covers running one of your own.
 
 ## Ports and firewalls
 
@@ -46,11 +46,11 @@ Both of these are common on laptops that move between home, office and public ne
 
 When the wallet says no connection, prove the path independently. Ask the machine whether the node's address answers at all, using whatever network tool you are comfortable with, and compare the result with what the wallet reports.
 
-If the address answers and the wallet still fails, the wallet's configuration or permissions are the remaining suspects, and a fresh install of the current build is a reasonable next step. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md has it, and reinstalling does not touch your wallet file.
+If the address answers and the wallet still fails, the wallet's configuration or permissions are the remaining suspects, and a fresh install of the current build is a reasonable next step. [Download the Official QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md) has it, and reinstalling does not touch your wallet file.
 
 If the address does not answer, the node is down or unreachable, and no wallet setting will change that. Switch back to the default node and work from there.
 
-Once the connection is back, the wallet still has to catch up, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-wallet-not-syncing-fix.md covers a sync that starts and then stalls. If a transaction was pending when the connection dropped, https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-pending-transaction-stuck.md explains what the network does with it.
+Once the connection is back, the wallet still has to catch up, and [QRL Wallet Not Syncing Fix](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-wallet-not-syncing-fix.md) covers a sync that starts and then stalls. If a transaction was pending when the connection dropped, [QRL Pending Transaction Stuck](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-pending-transaction-stuck.md) explains what the network does with it.
 
 ## FAQ
 

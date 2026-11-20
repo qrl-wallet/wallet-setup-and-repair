@@ -26,7 +26,7 @@ Nothing about the install touches your keys. The app is code that runs on the de
 
 Start the QRL wallet, choose the hardware option, and follow the prompt. Unlock the device first, then open the QRL app on it, and only then confirm the connection. Opening the app after the wallet has already looked for the device is the most common ordering mistake.
 
-On Windows the first connection may install a driver, and on Linux the device needs permission rules before the wallet can talk to it. A browser-based QRL interface has an extra layer, because the browser has to be granted access to the USB device; the desktop build avoids that layer entirely, which is why https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-desktop-vs-web-wallet.md recommends it for a paired device.
+On Windows the first connection may install a driver, and on Linux the device needs permission rules before the wallet can talk to it. A browser-based QRL interface has an extra layer, because the browser has to be granted access to the USB device; the desktop build avoids that layer entirely, which is why [QRL Desktop Wallet vs Web Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/qrl-desktop-vs-web-wallet.md) recommends it for a paired device.
 
 Once connected, the wallet lists the addresses derived from the device. Those addresses were never on your computer in usable form: the wallet can ask the device for a public address, and it can ask the device to sign, but it cannot ask for the key.
 
@@ -36,7 +36,7 @@ You enter the recipient and the amount in the wallet. The wallet builds the tran
 
 The keys stay on the device throughout, and the approval step is the point of the hardware: a compromised computer can propose a transaction, but it cannot sign one without you pressing the button.
 
-What the device does not change is the one-time key model. A QRL address still has 1,024 signatures behind it, drawn in order, and the device keeps track of where that count has reached. The count moving forward is why the device backup matters as much as the wallet backup: restoring the device from its phrase is how the same addresses come back. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md covers what happens when the count runs out, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md covers the habits around a device.
+What the device does not change is the one-time key model. A QRL address still has 1,024 signatures behind it, drawn in order, and the device keeps track of where that count has reached. The count moving forward is why the device backup matters as much as the wallet backup: restoring the device from its phrase is how the same addresses come back. [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) covers what happens when the count runs out, and [Is the QRL Wallet Safe to Use?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md) covers the habits around a device.
 
 ## Mining to a web wallet and the Ledger question
 
@@ -54,7 +54,7 @@ Then check the order: unlock, open the QRL app, and connect from the wallet. A d
 
 If the device is still invisible, update the firmware, restart the wallet, and try a different machine. A device that works elsewhere is a driver or permission problem, not a broken device. Never type the device's recovery phrase into any software while troubleshooting; no fix requires it.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md has the current build if the wallet itself is out of date, and https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-vs-trezor-quantum-readiness.md explains what a hardware device does and does not change about quantum resistance.
+[Download the Official QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md) has the current build if the wallet itself is out of date, and [QRL vs Trezor on Quantum Readiness](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/qrl-vs-trezor-quantum-readiness.md) explains what a hardware device does and does not change about quantum resistance.
 
 ## FAQ
 

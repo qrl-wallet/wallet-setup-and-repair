@@ -22,7 +22,7 @@ That last point matters more than it looks. One wallet with two addresses is one
 
 The new address appears in the same list as the old one, and the wallet shows the remaining count for whichever address is selected, so telling them apart is a matter of reading the label rather than remembering a string.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md covers the creation itself, including the moment the new address appears in the list.
+[Create Your First QRL Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md) covers the creation itself, including the moment the new address appears in the list.
 
 ## Order of operations
 
@@ -42,7 +42,7 @@ One key and one fee. The key is the signature used to authorise the transfer, dr
 
 The fee is the ordinary network charge for a transaction, shown before you confirm. There is no special charge for moving between your own addresses, and nothing about the destination being yours changes the fee.
 
-If the amount is large, nothing about the move changes either: it is one transaction to one address, exactly like paying anyone else. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/understanding-qrl-transaction-fees.md covers what that charge is for.
+If the amount is large, nothing about the move changes either: it is one transaction to one address, exactly like paying anyone else. [Understanding QRL Transaction Fees](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/understanding-qrl-transaction-fees.md) covers what that charge is for.
 
 The fee is charged on top of the amount, not taken out of it. A transfer of the whole balance therefore has to leave room for the fee: what leaves your balance is the payment plus the fee, and the new address receives the payment. The confirmation screen shows both figures separately, and that is the moment to compare them.
 
@@ -54,11 +54,11 @@ Keep the old address in the wallet. It is a record of what the address received 
 
 If the interface allows a label, give the new address one that says it is the current one. A future restore will then show two addresses with a clear difference rather than two strings you have to tell apart from memory.
 
-Check the remaining count on the new address once, so you know what you are starting with. Then continue as normal: https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md explains the count, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/what-is-tree-height-in-qrl.md explains why each address has the number it does.
+Check the remaining count on the new address once, so you know what you are starting with. Then continue as normal: [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) explains the count, and [What Is Tree Height in QRL?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/what-is-tree-height-in-qrl.md) explains why each address has the number it does.
 
 Two things to avoid. Do not describe this as moving to a new coin or a new network: the funds stay on QRL and only the signing address changes. And do not send a partial balance and leave a remainder on the old address, because a remainder is a balance that later has no keys to move it.
 
-https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/send-qrl-to-another-address.md covers the sending screen if you have not used it before.
+[Send QRL to Another Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/send-qrl-to-another-address.md) covers the sending screen if you have not used it before.
 
 ## FAQ
 

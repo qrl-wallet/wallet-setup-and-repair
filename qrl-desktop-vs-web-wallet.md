@@ -32,7 +32,7 @@ Any phone app that asks you to type your mnemonic before it shows a balance has 
 
 ## Long-term storage
 
-For a balance you are holding rather than spending, the desktop wallet is the better fit. Your job is then a short list: keep the wallet file somewhere your normal backup reaches, keep its password somewhere else, and keep the mnemonic on paper, offline, in two places. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/back-up-a-qrl-seed-phrase.md covers the phrase itself, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md walks through the first address and the backup that belongs with it.
+For a balance you are holding rather than spending, the desktop wallet is the better fit. Your job is then a short list: keep the wallet file somewhere your normal backup reaches, keep its password somewhere else, and keep the mnemonic on paper, offline, in two places. [Back Up a QRL Seed Phrase](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/back-up-a-qrl-seed-phrase.md) covers the phrase itself, and [Create Your First QRL Address](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/create-your-first-qrl-address.md) walks through the first address and the backup that belongs with it.
 
 What you should not do is treat the wallet file as the whole backup. The file without its password is a locked box, and the password without the file is a word you remember. The mnemonic is the only part that survives losing the machine.
 
@@ -40,9 +40,9 @@ What you should not do is treat the wallet file as the whole backup. The file wi
 
 The mnemonic restores the same keys in either interface, so moving from desktop to browser, or back, is a restore rather than a transfer. You type the phrase once, into a page you have verified is the one you meant to open, and the addresses appear after sync.
 
-Do not run two copies at once. QRL addresses sign with one-time keys drawn in order, and two live copies can draw the same key for two different transactions. https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md explains the risk in plain terms, and the practical rule is simple: when you restore in a new place, stop using the old one.
+Do not run two copies at once. QRL addresses sign with one-time keys drawn in order, and two live copies can draw the same key for two different transactions. [Is the QRL Wallet Safe to Use?](https://github.com/qrl-wallet/signatures-and-comparisons/blob/main/is-qrl-wallet-safe-to-use.md) explains the risk in plain terms, and the practical rule is simple: when you restore in a new place, stop using the old one.
 
-If the new interface will not connect, the problem is usually the node rather than the restore. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md has the current build, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/pair-ledger-nano-with-qrl.md is the next read if you keep keys on a device instead of a file.
+If the new interface will not connect, the problem is usually the node rather than the restore. [Download the Official QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md) has the current build, and [Pair Ledger Nano With QRL](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/pair-ledger-nano-with-qrl.md) is the next read if you keep keys on a device instead of a file.
 
 ## FAQ
 

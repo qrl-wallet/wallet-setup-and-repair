@@ -6,7 +6,7 @@
 
 ## Before you start
 
-Install the current build and let it finish syncing before you create anything. The release page carries the assets for Windows, macOS and Linux; https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md covers the download and the hash check that belongs with it.
+Install the current build and let it finish syncing before you create anything. The release page carries the assets for Windows, macOS and Linux; [Download the Official QRL Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/download-the-official-qrl-wallet.md) covers the download and the hash check that belongs with it.
 
 Syncing is the slow part. The wallet is downloading and checking the chain, and an address created halfway through sync is not wrong, it is simply not usable until the wallet knows the current state of the network. If the progress bar sits at zero, the application is not reaching a node, and fixing that comes before creating an address.
 
@@ -40,7 +40,7 @@ What the password cannot do is replace the mnemonic. If you lose the file, the p
 
 With sync complete, create the wallet. The application asks for a password, writes the file, and shows an address beginning with Q. That prefix is how you recognise a QRL address when you are checking a withdrawal form, and it is the same across desktop, Linux and macOS builds.
 
-Behind the address are one-time signing keys derived from your seed through a Merkle tree of height 10, which gives 1,024 signatures per address rather than an unlimited number. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md explains what that means in practice and how the wallet shows the remaining count.
+Behind the address are one-time signing keys derived from your seed through a Merkle tree of height 10, which gives 1,024 signatures per address rather than an unlimited number. [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) explains what that means in practice and how the wallet shows the remaining count.
 
 Write the mnemonic down at this point, not later. The screen that shows it is the only time the wallet presents the whole phrase, and the backup is worth more than the address it protects.
 
@@ -48,7 +48,7 @@ Write the mnemonic down at this point, not later. The screen that shows it is th
 
 The phrase is the wallet. Any build that accepts it will derive the same keys, and therefore the same address, on any machine. It is also the one thing an attacker needs, and there is no way to revoke it short of moving funds to a new wallet.
 
-Store it offline before you fund anything: paper, two copies, two places. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/back-up-a-qrl-seed-phrase.md is the full method, including the restore test that proves your copy is readable while the wallet is still empty. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/restore-qrl-wallet-from-mnemonic.md covers the other direction if you are bringing an existing wallet onto this machine.
+Store it offline before you fund anything: paper, two copies, two places. [Back Up a QRL Seed Phrase](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/back-up-a-qrl-seed-phrase.md) is the full method, including the restore test that proves your copy is readable while the wallet is still empty. [Restore QRL Wallet From a Mnemonic](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/restore-qrl-wallet-from-mnemonic.md) covers the other direction if you are bringing an existing wallet onto this machine.
 
 Do not photograph the screen, do not paste the phrase into a note app, and do not send it to yourself in a message. Each of those creates a copy you no longer control.
 
@@ -64,7 +64,7 @@ Arrival is not instant in the sense the interface suggests. The transaction has 
 
 Receiving repeatedly at the same address is fine. Receiving does not consume the one-time keys; sending does, which is why the remaining-signature count only moves when you spend. A test spend from the wallet does consume one key, and that is expected rather than a problem.
 
-If nothing appears after the wallet has caught up, check the address characters you sent to and the transaction on a block explorer before assuming the funds are gone. https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/receive-qrl-in-your-wallet.md walks through the receiving side step by step.
+If nothing appears after the wallet has caught up, check the address characters you sent to and the transaction on a block explorer before assuming the funds are gone. [Receive QRL in Your Wallet](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/receive-qrl-in-your-wallet.md) walks through the receiving side step by step.
 
 Keep the wallet file, its password and the mnemonic in three separate places. That is the whole setup: one file, one password, one phrase, and an address beginning with Q.
 
@@ -80,7 +80,7 @@ Until sync completes. An address can be created earlier, but it cannot show an a
 
 ### What happens after 1,024 signatures?
 
-That address has no keys left to sign with. The wallet tracks the count, and https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md covers when to move funds to a fresh address.
+That address has no keys left to sign with. The wallet tracks the count, and [How Many QRL OTS Keys Remain?](https://github.com/qrl-wallet/wallet-setup-and-repair/blob/main/how-many-qrl-ots-keys-remain.md) covers when to move funds to a fresh address.
 
 ### Can I create more than one wallet?
 
